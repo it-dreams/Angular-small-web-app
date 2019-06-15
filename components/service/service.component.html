@@ -1,0 +1,21 @@
+<div class="clearBoth"></div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item" *ngFor="let s of result">{{s.title}}</li>
+      </ul>
+    </div>
+    <div class="col-md-9">
+
+      <div class="card margin-10" id="" *ngFor="let r of result">
+        <div class="card-body">
+          <!-- <h5><b>ID -</b> {{r.id}}</h5> -->
+          <h5><b>Post Title -</b> {{r.title}}</h5>
+          <p class="card-text mb-auto"><b>Post Desc -</b> {{r.body}}</p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div> 
